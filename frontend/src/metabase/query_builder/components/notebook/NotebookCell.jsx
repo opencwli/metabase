@@ -52,6 +52,7 @@ NotebookCellItem.defaultProps = {
 
 export const NotebookCellAdd = styled(NotebookCellItem).attrs({
   inactive: ({ initialAddText }) => initialAddText,
+  // eslint-disable-next-line react/display-name
   children: ({ initialAddText }) =>
     initialAddText || <Icon name="add" className="text-white" />,
 })`
